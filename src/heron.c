@@ -40,8 +40,8 @@ double heron_kahan(double a, double b, double c) {
     double term3 = c + (a - b);
     double term4 = a + (b - c);
 
-    double radicand = term1 * term2 * term3 * term4;
-    return 0.25 * sqrt(fmax(0.0, radicand));
+    double rad = term1 * term2 * term3 * term4;
+    return 0.25 * sqrt(fmax(0.0, rad));
 }
 
 double heron(double a, double b, double c) {
